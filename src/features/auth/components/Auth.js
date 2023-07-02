@@ -4,15 +4,15 @@ import {
   increment,
   incrementAsync,
   selectCount,
-} from './counterSlice';
+} from '../AuthSlice';
 
-export default function Counter() {
+export default function Auth() {
   const count = useSelector(selectCount);
   const dispatch = useDispatch();
   
   return (
     <div>
-      Counter
+      Auth
     </div>
   );
 }
