@@ -3,6 +3,8 @@ import Home from './pages/Home';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import CartPage from './pages/CartPage';
+import Checkout from './pages/Checkout';
+import ProductDetailsPage from './pages/ProductDetailsPage';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -17,8 +19,16 @@ const router = createBrowserRouter([
     element: <CartPage />,
   },
   {
+    path: "/checkout",
+    element: <Checkout />,
+  },
+  {
     path: "/login",
     element: <LoginPage />,
+  },
+  {
+    path: "/product-detail/:id",
+    element: <ProductDetailsPage />,
   },
   {
     path: "/signup",
