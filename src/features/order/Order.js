@@ -3,16 +3,15 @@ import { useSelector, useDispatch } from 'react-redux';
 import {
   increment,
   incrementAsync,
-  selectCount,
-} from '../authSlice';
+} from './counterSlice';
 
-export default function Auth() {
+export default function Order() {
   const count = useSelector(selectCount);
   const dispatch = useDispatch();
   
   return (
     <div>
-      Auth
+      Counter
     </div>
   );
 }
